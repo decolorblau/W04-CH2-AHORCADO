@@ -1,35 +1,38 @@
+import { useState } from "react/cjs/react.development";
 import "./App.css";
 import AlphabetLetter from "./componets/AlphabetLetter/AlphabetLetter";
 import WordBox from "./componets/WordBox/WordBox";
 
 function App() {
+  const [checkLetter, setCheckLetter] = useState("");
+
   const alphabet = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H",
-    "I",
-    "J",
-    "K",
-    "L",
-    "M",
-    "N",
-    "Ñ",
-    "P",
-    "Q",
-    "R",
-    "S",
-    "T",
-    "U",
-    "V",
-    "W",
-    "X",
-    "Y",
-    "Z",
+    { id: 10, letter: "A" },
+    { id: 20, letter: "B" },
+    { id: 30, letter: "C" },
+    { id: 40, letter: "D" },
+    { id: 50, letter: "E" },
+    { id: 60, letter: "F" },
+    { id: 70, letter: "G" },
+    { id: 80, letter: "H" },
+    { id: 90, letter: "I" },
+    { id: 100, letter: "J" },
+    { id: 110, letter: "K" },
+    { id: 120, letter: "L" },
+    { id: 130, letter: "M" },
+    { id: 140, letter: "N" },
+    { id: 150, letter: "Ñ" },
+    { id: 160, letter: "P" },
+    { id: 170, letter: "Q" },
+    { id: 180, letter: "R" },
+    { id: 190, letter: "S" },
+    { id: 200, letter: "T" },
+    { id: 210, letter: "U" },
+    { id: 220, letter: "V" },
+    { id: 230, letter: "W" },
+    { id: 240, letter: "X" },
+    { id: 250, letter: "Y" },
+    { id: 260, letter: "Z" },
   ];
 
   const wordList = [
@@ -56,13 +59,17 @@ function App() {
       </header>
 
       <div className="word-box">
-        {arrPlayWord.map((letter) => (
-          <WordBox key={letter} word={letter} />
+        {arrPlayWord.map((letter, i) => (
+          <WordBox key={i} word={letter} />
         ))}
       </div>
       <div className="alphabet-container">
-        {alphabet.map((letter) => (
-          <AlphabetLetter key={letter} letter={letter} />
+        {alphabet.map((letterBox) => (
+          <AlphabetLetter
+            key={letterBox.id}
+            letter={letterBox.letter}
+            actionOnClick={() => setCheckLetter(letterBox.letter)}
+          />
         ))}
       </div>
 

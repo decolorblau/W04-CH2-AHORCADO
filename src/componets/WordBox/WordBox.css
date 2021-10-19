@@ -1,5 +1,7 @@
 .word-box__letter {
   background-color: orange;
+  color: orange;
+  user-select: none;
   height: 80px;
   width: 80px;
   border-radius: 50%;

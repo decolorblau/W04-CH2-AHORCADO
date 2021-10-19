@@ -6,7 +6,7 @@ const WordBox = ({ word }) => {
 };
 
 WordBox.propTypes = {
-  number: PropTypes.string.isRequired,
+  word: PropTypes.string.isRequired,
 };
 
 export default WordBox;

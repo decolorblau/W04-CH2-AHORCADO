@@ -6,7 +6,9 @@ const AlphabetLetter = ({ letter }) => {
   const [className, setClassName] = useState("alphabetsoup");
 
   function actionOnClick() {
-    setClassName(className === "alphabetsoup" && "alphabetsoup off");
+    setClassName(
+      className === "alphabetsoup" ? "alphabetsoup off" : "alphabetsoup off"
+    );
   }
 
   return (

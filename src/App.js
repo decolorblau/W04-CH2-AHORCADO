@@ -1,4 +1,5 @@
 import "./App.css";
+import WordBox from "./componets/WordBox/WordBox";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
         <h1>HANGMAN</h1>
       </header>
 
-      <div className="hangman-draw">
+      {/* <div className="hangman-draw">
         <svg class="hangman" viewBox="0 0 96 96" width="300" height="300">
           <line class="stage11" x1="62" y1="70" x2="56" y2="56"></line>
           <line class="stage10" x1="50" y1="70" x2="56" y2="56"></line>
@@ -39,7 +40,7 @@ function App() {
         <span className="alphabet-soup">A</span>
         <span className="alphabet-soup">A</span>
         <span className="alphabet-soup">A</span>
-      </div>
+      </div> */}
     </>
   );
 }

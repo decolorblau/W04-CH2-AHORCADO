@@ -1,0 +1,11 @@
+.word-box__letter {
+  background-color: orange;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+}

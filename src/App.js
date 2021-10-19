@@ -1,5 +1,7 @@
 import "./App.css";
 import AlphabetLetter from "./componets/AlphabetLetter/AlphabetLetter";
+import WordBox from "./componets/WordBox/WordBox";
+
 
 function App() {
   const Alphabet = [
@@ -36,8 +38,6 @@ function App() {
       <header className="main-header">
         <h1>HANGMAN</h1>
       </header>
-
-      <AlphabetLetter letter="B" />
 
       {/* <div className="hangman-draw">
         <svg class="hangman" viewBox="0 0 96 96" width="300" height="300">

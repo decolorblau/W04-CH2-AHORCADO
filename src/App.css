@@ -20,11 +20,6 @@ ul {
   display: flex;
 }
 
-.word-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .hangman-draw {
   display: flex;
   justify-content: center;
@@ -35,11 +30,8 @@ ul {
   justify-content: center;
   align-items: center;
 }
-
-.word-box__letter {
-  background-color: orange;
-  height: 80px;
-  width: 60px;
-  margin: 10px;
-  text-align: center;
+.word-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

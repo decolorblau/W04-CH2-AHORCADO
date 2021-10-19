@@ -13,8 +13,8 @@ Hay que incluir un archivo con la lista de componentes y sus responsabilidades.
     - Recibir la letra y renderizarla.
 
 
-    AlphabetSoup:
-    - Renderitzar la array de las letras del abecedario.
+    AlphabetLetter:
+    - Renderitzar la letra que recibe.
     - Aceptar Acción al onClick.
     - Añadirse una classe CSS cuando al hacer click.
 

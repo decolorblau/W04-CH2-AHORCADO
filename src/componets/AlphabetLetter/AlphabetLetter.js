@@ -2,17 +2,23 @@ import { useState } from "react";
 import PropType from "prop-types";
 import "./AlphabetLetter.css";
 
-const AlphabetLetter = ({ letter }) => {
+const AlphabetLetter = ({ letter, actionOnClick }) => {
   const [className, setClassName] = useState("alphabetsoup");
 
-  function actionOnClick() {
+  function actionOnClickClass() {
     setClassName(
       className === "alphabetsoup" ? "alphabetsoup off" : "alphabetsoup off"
     );
   }
 
   return (
-    <div className={className} onClick={actionOnClick}>
+    <div
+      className={className}
+      onClick={function (event) {
+        actionOnClickClass();
+        actionOnClick();
+      }}
+    >
       {letter}
     </div>
   );

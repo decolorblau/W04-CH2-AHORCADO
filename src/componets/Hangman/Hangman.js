@@ -1,4 +1,4 @@
-import PropType from "prop-types";
+import PropTypes from "prop-types";
 
 const Hangman = ({ linesSVG, wrongLetters }) => {
   const wrongLines = linesSVG.slice(0, wrongLetters);
@@ -6,8 +6,8 @@ const Hangman = ({ linesSVG, wrongLetters }) => {
 };
 
 Hangman.protoType = {
-  linesSVG: PropType.array.isRequired,
-  wrongLetters: PropType.number.isRequired,
+  linesSVG: PropTypes.array.isRequired,
+  wrongLetters: PropTypes.number.isRequired,
 };
 
 export default Hangman;

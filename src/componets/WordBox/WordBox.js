@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropType from "prop-types";
 import "./WordBox.css";
 
 const WordBox = ({ word }) => {
@@ -7,6 +7,7 @@ const WordBox = ({ word }) => {
 
 WordBox.propTypes = {
   word: PropTypes.string.isRequired,
+
 };
 
 export default WordBox;

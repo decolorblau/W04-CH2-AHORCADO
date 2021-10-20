@@ -9,14 +9,14 @@ Hay que incluir un archivo con la lista de componentes y sus responsabilidades.
 ## COMPONENTES:
 
     WordBox:
-    - Renderizar la caja.
-    - Recibir la letra y renderizarla.
+    - (ok) Renderizar la caja.
+    - (ok) Recibir la letra y renderizarla.
 
 
     AlphabetLetter:
-    - Renderitzar la letra que recibe.
-    - Aceptar Acción al onClick.
-    - Añadirse una classe CSS cuando al hacer click.
+    - (ok) Renderitzar la letra que recibe.
+    - (ok) Aceptar Acción al onClick.
+    - (ok) Añadirse una classe CSS cuando al hacer click.
 
 
     Hangman:
@@ -26,11 +26,9 @@ Hay que incluir un archivo con la lista de componentes y sus responsabilidades.
 
     App:
     - Añadir clase de las distintas partes del Hangman si la letra apretada es incorrecta.
-
-
     - Si la letra clicada es correcta enviar letra y posición al WordBox.
 
 
-    - Contener una array de palabras.
-    - Imprimir tantos WordBox como letras tenga la palabra.
-    - Seleccionar una palabra random de la array para el juego.
+    - (ok) Contener una array de palabras.
+    - (ok) Imprimir tantos WordBox como letras tenga la palabra.
+    - (ok) Seleccionar una palabra random de la array para el juego.

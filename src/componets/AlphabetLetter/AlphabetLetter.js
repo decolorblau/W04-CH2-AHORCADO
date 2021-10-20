@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PropType from "prop-types";
+import PropTypes from "prop-types";
 import "./AlphabetLetter.css";
 
 const AlphabetLetter = ({ letter, actionOnClick }) => {
@@ -25,7 +25,7 @@ const AlphabetLetter = ({ letter, actionOnClick }) => {
 };
 
 AlphabetLetter.propTypes = {
-  letter: PropType.string.isRequired,
+  letter: PropTypes.string.isRequired,
 };
 
 export default AlphabetLetter;
